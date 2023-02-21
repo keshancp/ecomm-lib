@@ -7,27 +7,27 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ECommReponse {
+public class ECommResponse {
 
     private int statusCode;
     private String message;
     private Object data;
 
-    public ECommReponse(int statusCode,String message){
+    public ECommResponse(int statusCode, String message){
         this.statusCode=statusCode;
         this.message=message;
     }
 
-    public ECommReponse(Object data){
+    public ECommResponse(Object data){
         this.data=data;
     }
 
-    public ECommReponse(String message){
+    public ECommResponse(String message){
         this.message=message;
     }
 
 
-    public ECommReponse(String message,Object data){
+    public ECommResponse(String message, Object data){
         this.message=message;
         this.data=data;
     }
